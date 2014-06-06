@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 public class WordInfo {
+
 	public String word;
 	public Integer training_count;
 	public Date created_at;

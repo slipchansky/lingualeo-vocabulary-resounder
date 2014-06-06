@@ -62,7 +62,15 @@ public class LeoServlet extends HttpServlet {
 		}
 		
 		out.println ("</table><br />");
-		out.println ("<input type=submit value='load' /></form>");
+		
+		out.println ("<p>Direction<br>");
+		out.println ("<input type=radio name='direction' checked value='forward'/>Word-Translation<br>");
+		out.println ("<input type=radio name='direction' value='backward'/>Translation-Word</p>");
+
+		out.println ("<p>File name<br>");
+		out.println ("<input name='filename' value='dictionary.zip'/></p>");
+		
+		out.println ("<p><input type=submit value='download' /></p></form>");
 		out.println ("</body></html>");
 		
 	}

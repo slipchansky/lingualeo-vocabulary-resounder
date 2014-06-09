@@ -33,13 +33,6 @@ public class ResoundTool {
 		
 	}
 	
-	public static void main(String[] args) throws IOException, UnsupportedAudioFileException {
-		
-		OutputStream out = new FileOutputStream ("d:\\sound.mp3");
-		//getResound ("http://translate.google.com/translate_tts?ie=UTF-8&q="+java.net.URLEncoder.encode("фактически", "UTF-8")+"&tl=ru", out);
-		//getResound ("http://d2x1jgnvxlnz25.cloudfront.net/v2/2/1926-631152008.mp3", out);
-		out.close ();
-	}
 
 	public static void silent(int delay, OutputStream out) throws IOException {
 		InputStream silentStream = ResoundTool.class.getClassLoader().getResourceAsStream("delay1sec.mp3");
